@@ -5,7 +5,7 @@ const express = require("express");
 
 const livrosRoutes = Router()
 
-livrosRoutes.get("/", LivrosController.index);
+livrosRoutes.get("/:pagina", LivrosController.index);
 
 
 export default livrosRoutes
